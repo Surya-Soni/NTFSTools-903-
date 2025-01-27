@@ -25,4 +25,9 @@ public String transferMoney(long srcAcno,long destAcno,double amount) {
 		return "transfering"+amount+"from"+srcAcno+"to"+destAcno;
 
 	}
+
+public double checkBalance() {
+	return new Random().nextLong(100000);
+	
+}
 }
