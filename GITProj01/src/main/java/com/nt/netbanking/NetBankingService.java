@@ -8,6 +8,7 @@ public class NetBankingService {
 	}
 	
 
+
 	public String closeAccount() {
 		return "Account is closed";
 	}
@@ -17,6 +18,11 @@ public class NetBankingService {
 	
 	public String deposit (long acno,double amount) {
 		return amount+"is deposit from the account number::"+acno;
+	}
+
+
+public String transferMoney(long srcAcno,long destAcno,double amount) {
+		return "transfering"+amount+"from"+srcAcno+"to"+destAcno;
 
 	}
 }
